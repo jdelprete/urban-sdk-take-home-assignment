@@ -4,16 +4,13 @@ This project implements the requested FastAPI geospatial traffic microservice ba
 
 Architecture diagram asset:
 
-![Architecture Diagram](/Users/josephdelprete/Downloads/UrbanSDK%20Take%20Home%20Assignment/docs/architecture-diagram.svg)
+![Architecture Diagram](docs/architecture-diagram.svg)
 
 ## Quickstart
 
-The committed [`.env`](/Users/josephdelprete/Downloads/UrbanSDK%20Take%20Home%20Assignment/.env) is configured for this machine. If you run this project on another machine, update `.env` first so `DATABASE_URL`, `POSTGRES_USER`, `POSTGRES_PASSWORD`, and related values match your local PostgreSQL setup.
-
-You can also start from [`.env.example`](/Users/josephdelprete/Downloads/UrbanSDK%20Take%20Home%20Assignment/.env.example) instead of reusing the local `.env`.
+The local `.env` used during development is machine-specific. If you run this project on another machine, create your own `.env` from [`.env.example`](.env.example) and update `DATABASE_URL`, `POSTGRES_USER`, `POSTGRES_PASSWORD`, and related values to match your local PostgreSQL setup.
 
 ```bash
-cd "/Users/josephdelprete/Downloads/UrbanSDK Take Home Assignment"
 source .venv/bin/activate
 uvicorn app.main:app --reload
 ```
@@ -76,7 +73,7 @@ Two setup paths work:
 - Docker Compose for a containerized PostGIS database
 - Homebrew PostgreSQL + PostGIS for a native local database on macOS
 
-Before using either path on a different machine, edit [`.env`](/Users/josephdelprete/Downloads/UrbanSDK%20Take%20Home%20Assignment/.env) to match your local database user, password, host, and database name.
+Before using either path on a different machine, create `.env` from [`.env.example`](.env.example) and edit it to match your local database user, password, host, and database name.
 
 If you are setting this up from scratch on another machine, copy `.env.example` to `.env` and edit the values there.
 
@@ -173,7 +170,7 @@ The API will be available at [http://localhost:8000/docs](http://localhost:8000/
 
 ### Notebook Visualization
 
-The notebook is located at [notebooks/traffic_speed_visualization.ipynb](/Users/josephdelprete/Downloads/UrbanSDK%20Take%20Home%20Assignment/notebooks/traffic_speed_visualization.ipynb).
+The notebook is located at [notebooks/traffic_speed_visualization.ipynb](notebooks/traffic_speed_visualization.ipynb).
 
 Before opening it, export a valid Mapbox token in your shell:
 
@@ -247,7 +244,7 @@ make db-stop
 
 Primary diagram:
 
-![Architecture Diagram](/Users/josephdelprete/Downloads/UrbanSDK%20Take%20Home%20Assignment/docs/architecture-diagram.svg)
+![Architecture Diagram](docs/architecture-diagram.svg)
 
 Fallback text version:
 
@@ -260,4 +257,4 @@ flowchart LR
     E --> F["Jupyter Notebook<br/>MapboxGL Visualization"]
 ```
 
-The same diagram is also described in [docs/architecture.md](/Users/josephdelprete/Downloads/UrbanSDK%20Take%20Home%20Assignment/docs/architecture.md).
+The same diagram is also described in [docs/architecture.md](docs/architecture.md).

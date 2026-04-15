@@ -2,7 +2,7 @@
 
 Primary asset:
 
-![Architecture Diagram](/Users/josephdelprete/Downloads/UrbanSDK%20Take%20Home%20Assignment/docs/architecture-diagram.svg)
+![Architecture Diagram](architecture-diagram.svg)
 
 Fallback editable text version:
 
