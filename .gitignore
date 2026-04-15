@@ -13,3 +13,5 @@ duval_jan1_2024.parquet.gz
 Sr Python Engineering Candidate Homework.pdf
 
 notebooks/*.executed.ipynb
+notebooks/.ipynb_checkpoints/
+notebooks/*.pdf
