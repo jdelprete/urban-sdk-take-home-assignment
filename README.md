@@ -239,6 +239,7 @@ make db-stop
 - API responses expose geometry as GeoJSON so the notebook can render segments directly.
 - The tested local native runtime used PostgreSQL 17 and PostGIS 3.6 via Homebrew.
 - The checked-in `.env` is intentionally local to this workspace and should be edited before reuse on another machine.
+- Production hardening concerns such as API rate limiting, retry/backoff policy, and similar operational safeguards were not added in this take-home for the sake of time; the goal here was to show the core service design, data model, query layer, testing approach, and visualization workflow in the initial code push.
 
 ## Architecture
 
